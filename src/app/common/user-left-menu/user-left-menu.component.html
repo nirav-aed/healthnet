@@ -1,0 +1,32 @@
+<div class="menuWrapper">
+    <div class="navWrapper" #navWrapper (scroll)="scrollListener()">
+        <nav class="innernav" #innerNav>
+            <a md-raised-button routerLinkActive="active" [routerLink]="['/doctor', 'profile', 'personal-details']">
+                Personal Details
+                <md-icon class="md-18 pull-right">report_problem</md-icon>
+            </a>
+            <md-expansion-panel>
+                <md-expansion-panel-header>
+                    <md-panel-title>
+                        Personal data
+                    </md-panel-title>
+                </md-expansion-panel-header>
+                <a md-raised-button routerLinkActive="active" [routerLink]="['/doctor', 'profile', 'affiliation']">Affiliation</a>
+                <a md-raised-button routerLinkActive="active" [routerLink]="['/doctor', 'profile', 'delegate']">Delegate</a>
+            </md-expansion-panel>
+            <a md-raised-button routerLinkActive="active" [routerLink]="['/doctor', 'profile', 'contact-details']">Contact Details</a>
+            <a md-raised-button routerLinkActive="active" [routerLink]="['/doctor', 'profile', 'medical-degree']">Medical Degree</a>
+            <a md-raised-button routerLinkActive="active" [routerLink]="['/doctor', 'profile', 'specialization']">Specialization</a>
+            <a md-raised-button routerLinkActive="active" [routerLink]="['/doctor', 'profile', 'super-specialization']">Super Specialization</a>
+            <a md-raised-button routerLinkActive="active" [routerLink]="['/doctor', 'profile', 'affiliation']">Affiliation</a>
+            <a md-raised-button routerLinkActive="active" [routerLink]="['/doctor', 'profile', 'delegate']">Delegate</a>
+            <a md-raised-button routerLinkActive="active" [routerLink]="['/doctor', 'profile', 'rating-and-feedback']">Rating & Feedback</a>
+        </nav>
+    </div>
+    <button class="innerNavBtn innerNavBtnLeft" type="button">
+		<md-icon>chevron_left</md-icon>        
+	</button>
+    <button class="innerNavBtn innerNavBtnRight" type="button">
+		<md-icon>chevron_right</md-icon>
+	</button>
+</div>

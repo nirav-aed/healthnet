@@ -1,0 +1,75 @@
+<div class="row">
+  <div class="col-xs-10">
+    <h3>Personal Details</h3>
+  </div>
+  <div class="col-xs-2 text-right">
+    <button md-mini-fab color="warn">
+      <md-icon class="md-24">
+          edit
+      </md-icon>
+    </button>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-12">
+    <img src="assets/images/doctor.jpg" alt="" class="img-circle profilePic">
+
+  </div>
+  <div class="clearfix"></div>
+  <br>
+  <div class="col-sm-4">
+    <md-form-field>
+      <input mdInput placeholder="First name">
+    </md-form-field>
+  </div>
+  <div class="col-sm-4">
+    <md-form-field>
+      <input mdInput placeholder="Middle Name">
+    </md-form-field>
+  </div>
+  <div class="col-sm-4">
+    <md-form-field>
+      <input mdInput placeholder="Last name">
+    </md-form-field>
+  </div>
+  <div class="clearfix"></div>
+  <div class="col-sm-4">
+    <md-form-field>
+      <input mdInput [mdDatepicker]="picker" placeholder="Date of Birth">
+      <md-datepicker-toggle mdSuffix [for]="picker"></md-datepicker-toggle>
+      <md-datepicker #picker></md-datepicker>
+    </md-form-field>
+  </div>
+  <div class="col-sm-4">
+    <label class="radioLabel">Gender</label>
+    <md-radio-group>
+      <md-radio-button value="male">Male</md-radio-button>
+      <md-radio-button value="female">Female</md-radio-button>
+    </md-radio-group>
+  </div>
+  <div class="col-sm-4">
+    <md-select placeholder="Blood Group">
+      <md-option value="Aplus">
+        A+
+      </md-option>
+      <md-option value="Bplus">
+        B+
+      </md-option>
+      <md-option value="Oplus">
+        0+
+      </md-option>
+      <md-option value="Cplus">
+        A-
+      </md-option>
+      <md-option value="Dplus">
+        B-
+      </md-option>
+    </md-select>
+  </div>
+  <div class="clearfix"></div>
+  <div class="col-sm-12">
+    <md-form-field class="">
+      <textarea mdInput placeholder="About Me"></textarea>
+    </md-form-field>
+  </div>
+</div>

@@ -1,0 +1,14 @@
+<md-sidenav-container class="">
+    <md-sidenav #sidenav class="" position="end">
+        <app-user-menu (click)="sidenav.close()"></app-user-menu>
+    </md-sidenav>
+
+    <div class="">
+        <!-- <button type="button" md-button (click)="sidenav.open()" class="visible-xs-inline">
+            Open sidenav
+        </button> -->
+        <app-header (menuOpened)="sidenav.open()"></app-header>
+        <router-outlet></router-outlet>
+    </div>
+
+</md-sidenav-container>

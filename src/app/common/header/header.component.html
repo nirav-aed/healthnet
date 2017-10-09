@@ -1,0 +1,35 @@
+<md-toolbar>
+  <div class="container headerContainer">
+    <div class="row">
+      <div class="col-xs-8">
+        <a class="logo" [routerLink]="['/']">HealthNet</a>
+      </div>
+      <div class="col-xs-4 text-right loginTexts" *ngIf="loggedIn else userMenu">
+        <a href="javascript:void(0)" (click)="openLoginDialog()">Login</a> /
+        <a href="javascript:void(0)" (click)="openSignupDialog()">Sign Up</a>
+      </div>
+      <ng-template #userMenu>
+        <div class="col-xs-4 text-right loggedInMenu">
+          <div class="userMenuBtn"> <!--  (click)="userMenuOpen=!userMenuOpen" -->
+            <img src="assets/images/doctor.jpg" class="img-circle userProfile hidden-xs" alt="" [mdMenuTriggerFor]="menu">
+            <img src="assets/images/doctor.jpg" class="img-circle userProfile visible-xs" alt="" (click)="openMenu()">
+            <!-- <i class="fa fa-chevron-down hidden-xs desktopMenuBtn" aria-hidden="true"></i>
+            <i class="fa fa-bars visible-xs-inline-block mobileMenuBtn" aria-hidden="true"></i> -->
+            <button md-icon-button [mdMenuTriggerFor]="menu" color="primary" class="hidden-xs">
+              <md-icon class="md-36 desktopMenuIcon">expand_more</md-icon>
+            </button>
+            <button md-icon-button color="primary" class="visible-xs mobileMenuBtn" (click)="openMenu()">
+              <md-icon class="md-36">menu</md-icon>
+            </button>
+            <md-menu #menu="mdMenu">
+              <app-user-menu></app-user-menu>
+            </md-menu>
+          </div>
+        </div>
+      </ng-template>
+    </div>
+  </div>
+  <!-- <div class="userMenu hidden-xs" *ngIf="userMenuOpen" (click)="userMenuOpen=false">
+    <app-user-menu></app-user-menu>
+  </div> -->
+</md-toolbar>

@@ -1,0 +1,55 @@
+/* .mobileUserFabMenu{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+.mobileUserFabMenu button{
+    font-size: 25px;
+}
+.overlay{
+    position: fixed;
+    width: 0;
+    height: 0;
+    left: 0;
+    top: 0;
+    background: rgba(0,0,0,0.5);
+    opacity: 0;
+    transition: 0.3s opacity;
+}
+.mobileUserFabMenu.open .overlay{
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+}
+.mobileUserFabMenu app-user-left-menu{
+    display: none;
+    position: absolute;
+    bottom: 50px;
+    right: 0;
+    text-align: right;
+}
+.mobileUserFabMenu.open app-user-left-menu{
+    display: block;
+}
+.mobileUserFabMenu app-user-left-menu a{
+    margin-top: 0;
+    transition: 0.3s all;
+}
+.mobileUserFabMenu.open app-user-left-menu a{
+    margin-top: 10px !important;
+} */
+
+@media screen and (max-width: 767px){
+    /* app-user-left-menu{
+        width: 300% !important;
+        overflow-x: hidden;
+        display: block;
+    } */
+    .userLeftMenuCon{
+        /* overflow-x: auto; */
+        /* overflow-x: auto;
+        overflow-y: hidden;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch; */
+    }
+}

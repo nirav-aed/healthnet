@@ -1,0 +1,11 @@
+.profilePic{
+    width: 120px;
+    height: 120px;
+    border: 1px solid #cecece;
+}
+.mat-form-field{
+    width: 100%;
+}
+.radioLabel{
+    display: block;
+}
